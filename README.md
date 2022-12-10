@@ -4,7 +4,7 @@ A website that will combine two apis to do something usefull
 API's - https://github.com/public-apis/public-apis
 
 
-eBay - https://developer.ebay.com/
+Football - https://www.api-football.com/documentation-v3
 
 BestBuy - https://bestbuyapis.github.io/api-documentation/#overview
 
