@@ -8,4 +8,7 @@ Our Website - https://universityofdundee-computing.github.io/CW2-api_mashup/inde
 
 
 Dictionary - https://dictionaryapi.com/products/json
-Thesaurus - https://api-ninjas.com/api/thesaurus
+
+Thesaurus - https://api-ninjas.com/api/thesaurus - API key is - +taw17yO8Pmwz7NBacivWA==7sUyXhtQVrv8kYsl
+
+
