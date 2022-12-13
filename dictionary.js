@@ -5,6 +5,18 @@ const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
+  $.ajax({
+        method: 'GET',
+        url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + inpWord,
+        headers: { 'X-Api-Key': '3tbIyhQrxCdB1UWGIlW2xg==rk2T9t3OF3jyk5WA'},
+        contentType: 'application/json',
+        success: function(result) {
+            console.log(result);
+        },
+        error: function ajaxError(jqXHR) {
+            console.error('Error: ', jqXHR.responseText);
+        }
+    });
   console.log(inpWord);
   const urls = url + inpWord;
   fetch(urls)
