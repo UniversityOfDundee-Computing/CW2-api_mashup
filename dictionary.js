@@ -12,6 +12,12 @@ btn.addEventListener("click", () => {
         contentType: 'application/json',
         success: function(result) {
             console.log(result);
+          synonyms.innerHTML = `${result.synonyms[0]}`
+           synonyms2.innerHTML = `${result.synonyms[1]}`
+           synonyms3.innerHTML = `${result.synonyms[2]}`
+           synonyms4.innerHTML = `${result.synonyms[3]}`
+           synonyms5.innerHTML = `${result.synonyms[4]}`
+
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
