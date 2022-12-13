@@ -13,7 +13,7 @@ btn.addEventListener("click", () => {
         console.log(data);
         wordHeading.innerHTML = `
         ${inpWord}`
-        definition.innerHTML = `
+        definition.innerHTML = `Definition:
         ${data[0].meanings[0].definitions[0].definition}
         `
     //     result.innerHTML =`
