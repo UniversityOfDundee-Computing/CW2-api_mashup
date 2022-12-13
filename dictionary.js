@@ -4,12 +4,11 @@ const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
-    let inpWord = document.getElementById("inp-word").value;
-    console.log(inpWord);
-    const urls = url + inpWord;
-    fetch(urls)
+  let inpWord = document.getElementById("inp-word").value;
+  console.log(inpWord);
+  const urls = url + inpWord;
+  fetch(urls)
     .then((resp) => resp.json())
-
     .then((data)=> {
         console.log(data);
         wordHeading.innerHTML = `
@@ -32,13 +31,11 @@ btn.addEventListener("click", () => {
     // <p class="example">${data[0].meanings[0].definitions[0].example }</p>`;
     // sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
 
-
-
     })
     .catch(() => {
-        result.innerHTML = `<h3>No result Found`
+      result.innerHTML = `<h3>No result Found</h3>`
     });
 })
-function playSound(){
-    sound.play();
+function playSound() {
+  sound.play();
 }
