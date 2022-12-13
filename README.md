@@ -6,6 +6,7 @@ API's - https://github.com/public-apis/public-apis
 
 Our Website - https://universityofdundee-computing.github.io/CW2-api_mashup/index.html
 
+Dictionary Website - https://universityofdundee-computing.github.io/CW2-api_mashup/dictionary.html
 
 Dictionary - https://developer.oxforddictionaries.com key - 	9be59b58e71f67a2d002b4336660afce userid - 7efdf354
 
