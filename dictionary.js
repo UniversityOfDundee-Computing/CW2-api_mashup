@@ -58,32 +58,3 @@ function playSound() {
   sound.play();
 }
 
-// // Fetching synonyms from Thesaurus API
-const apiKey = "+taw17yO8Pmwz7NBacivWA==7sUyXhtQVrv8kYsl";
-const thesaurusUrl = "https://api-ninjas.com/api/thesaurus";
-let word;
-
-const cors = require("cors");
-app.use(cors());
-
-btn.addEventListener("click", () => {
-  let inpWord = document.getElementById("inp-word").value;
-  word = inpWord;
-  const thesaurusUrlWithKey = `${thesaurusUrl}?key=${apiKey}&word=${word}`;
-  fetch(thesaurusUrlWithKey)
-    .then((resp) => resp.json())
-    .then((data) => {
-      console.log(data);
-      let synonyms = data.synonyms;
-      let synonymsList = synonyms.split(",");
-      console.log(synonymsList);
-      let output = "";
-      synonymsList.forEach((synonym) => {
-        output += `<li>${synonyms}</li>`
-      })
-      list.innerHTML = output;
-    })
-    .catch(() => {
-      result.innerHTML = `<h3>No synonyms Found</h3>`
-    });
-})
