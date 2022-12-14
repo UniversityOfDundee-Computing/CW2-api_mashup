@@ -5,24 +5,7 @@ const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
-  $.ajax({
-        method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + inpWord,
-        headers: { 'X-Api-Key': '3tbIyhQrxCdB1UWGIlW2xg==rk2T9t3OF3jyk5WA'},
-        contentType: 'application/json',
-        success: function(result) {
-            console.log(result);
-          synonyms.innerHTML = `${result.synonyms[0]}`
-           synonyms2.innerHTML = `${result.synonyms[1]}`
-           synonyms3.innerHTML = `${result.synonyms[2]}`
-           synonyms4.innerHTML = `${result.synonyms[3]}`
-           synonyms5.innerHTML = `${result.synonyms[4]}`
-
-        },
-        error: function ajaxError(jqXHR) {
-            console.error('Error: ', jqXHR.responseText);
-        }
-    });
+  
   console.log(inpWord);
   const urls = url + inpWord;
   fetch(urls)
@@ -53,6 +36,21 @@ btn.addEventListener("click", () => {
     .catch(() => {
       result.innerHTML = `<h3>No result Found</h3>`
     });
+
+    $.ajax({
+      method: 'GET',
+      url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + inpWord,
+      headers: { 'X-Api-Key': '3tbIyhQrxCdB1UWGIlW2xg==rk2T9t3OF3jyk5WA'},
+      contentType: 'application/json',
+      success: function(result) {
+          console.log(result);
+          
+        synonyms.innerHTML = `${result.synonyms[0]}, ${result.synonyms[1]}, ${result.synonyms[2]}, ${result.synonyms[3]}, ${result.synonyms[4]}`
+      },
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
+  });
 })
 function playSound() {
   sound.play();
