@@ -10,10 +10,17 @@
   <!-- CSS only -->
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+  .center {
+      text-align-last: center;
+      border: 2px solid black;
+  }
+</style>
+
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg" style="background-color: #FEFFEA;">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,15 +28,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active"  href="#"><strong>Home</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dictionary</a>
+            <a class="nav-link" aria-current="page" href="index.html"><strong>Dictionary</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Translator</a>
+            <a class="nav-link" href="translate.html"><strong>Translator</strong></a>
           </li>
         </ul>
+        <ul class="navbar-nav ms-auto px-3 d-none d-lg-block">
+          <li class="nav-item ms-auto animate__animated animate__pulse pt-2 text">
+            <p><strong>Word Madness</strong></p>
+          </li>
+        </ul>
+
       </div>
     </div>
   </nav>
@@ -37,27 +50,30 @@
   <div class="container">
 
 
-    <h1 class="text-center">Word Madness</h1>
-    <p class="bg-white text-center border border-dark">When you enter a word into the search box you will be given information about the word such as the definition and synonyms among other things.</p>
-    <div class="text-center">
-      <input type="text" class="form-control mb-3" id="inp-word" placeholder="Enter a word here">
-      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <h1 class="text-center pt-5 pb-5">Word Madness</h1>
+    <p class="bg-color text-center border border-dark pt-2 pb-2">When you enter a word into the search box you will be given information about the word such as the definition and synonyms among other things.</p>
+    <div class="text-center input-group mb-3 w-25 box pt-2 pb-2 bg">
+      <input type="text" class="form-control mb-3 bg-color" id="inp-word" placeholder="Enter a word here">
+      <button class="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
+
+    
+
 
     <div class="row">
 
-      <div class="col-md">
+      <div class="col-md" >
 
-        <div class="text center mt-4 bg-white p-3 border border-dark">
+        <div class="text center mt-4 bg-color p-3 border border-dark">
           <h2 id="wordHeading">The Word</h2>
           <p id="definition">The Definition</p>
         </div>
 
       </div>
-      <div class="col-md">
-      <div class="text-center mt-4 bg-white border border-dark">
+      <div class="col-md bg">
+      <div class="text-center mt-4 bg-color p-3 border border-dark bg-color">
         <h2>Synonyms</h2>
-        <p id="word">The word</p>
+        <p class="text" id="word">The Word</p>
         <ol id="list">
         </ol>
 

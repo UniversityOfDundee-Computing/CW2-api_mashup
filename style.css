@@ -11,7 +11,7 @@ body{
   justify-content: center;
   padding: 0 10px;
   min-height: 100vh;
-  background: #F5F5DC;
+  background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true);
 }
 .container{
   max-width: 690px;
@@ -21,10 +21,7 @@ body{
   border-radius: 7px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.01);
 }
-.wrapper{
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
+
 .wrapper .text-input{
   display: flex;
   border-bottom: 1px solid #ccc;
