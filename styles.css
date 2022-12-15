@@ -38,3 +38,9 @@ input {
 .text{
   font-size: x-large;
 }
+
+.center {
+  text-align-last: center;
+  border: 2px solid black;
+}
+
