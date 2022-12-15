@@ -1,7 +1,12 @@
 body {
-  background-color: #F5F5DC; /* pastel color for the background */
+    background-image:url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 input {
   color: #ADD8E6; /* pastel color for the text */
   background-color: #FFFACD; /* pastel color for the input field */
+  
 }
