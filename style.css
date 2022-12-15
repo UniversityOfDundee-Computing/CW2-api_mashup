@@ -5,6 +5,16 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+#navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #FEFFEA;
+  opacity: 0.8;
+  
+
+}
 body{
   display: flex;
   align-items: center;
@@ -120,6 +130,8 @@ body{
   border-radius: 5px;
   background: #F5F5DC;
 }
+
+
 
 @media (max-width: 660px){
   .container{
