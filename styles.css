@@ -1,36 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
 body {
-    background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true) ;
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Montserrat";
 }
 
-input {
-  color: #ADD8E6; /* pastel color for the text */
-  background-color: #FFFACD; /* pastel color for the input field */
-  
+.inside{
+  padding: 0 30% ;
 }
 
 .bg-color{
-  background-color: #FEFFEA;
+ background-color: rgba(243, 247, 191, 0.4);
+ border: 2px solid rgb(5, 5, 5, 0.5);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.8);
 }
-
-.box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,50%);
-}
-
 .button {
   background-color: #6B705C;
   border: none;
@@ -40,23 +27,14 @@ input {
   display: inline-block;
   height: 1cm;
   width: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,1);
 }
-
-.text{
-  font-size: x-large;
-}
-
-.center {
-  text-align-last: center;
-  border: 2px solid black;
-}
-#navbar{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #FEFFEA;
-  opacity: 0.8;
-
+.heading{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-bottom: 2px solid #6B705C;
+  border-width: medium;
 }
 
