@@ -5,6 +5,7 @@ const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
+  
   console.log(inpWord);
   const urls = url + inpWord;
   fetch(urls)
@@ -35,37 +36,23 @@ btn.addEventListener("click", () => {
     .catch(() => {
       result.innerHTML = `<h3>No result Found</h3>`
     });
+
+    $.ajax({
+      method: 'GET',
+      url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + inpWord,
+      headers: { 'X-Api-Key': '3tbIyhQrxCdB1UWGIlW2xg==rk2T9t3OF3jyk5WA'},
+      contentType: 'application/json',
+      success: function(result) {
+          console.log(result);
+          
+        synonyms.innerHTML = `${result.synonyms[0]}, ${result.synonyms[1]}, ${result.synonyms[2]}, ${result.synonyms[3]}, ${result.synonyms[4]}`
+      },
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
+  });
 })
 function playSound() {
   sound.play();
 }
 
-// // Fetching synonyms from Thesaurus API
-const apiKey = "+taw17yO8Pmwz7NBacivWA==7sUyXhtQVrv8kYsl";
-const thesaurusUrl = "https://api-ninjas.com/api/thesaurus";
-let word;
-
-const cors = require("cors");
-app.use(cors());
-
-btn.addEventListener("click", () => {
-  let inpWord = document.getElementById("inp-word").value;
-  word = inpWord;
-  const thesaurusUrlWithKey = `${thesaurusUrl}?key=${apiKey}&word=${word}`;
-  fetch(thesaurusUrlWithKey)
-    .then((resp) => resp.json())
-    .then((data) => {
-      console.log(data);
-      let synonyms = data.synonyms;
-      let synonymsList = synonyms.split(",");
-      console.log(synonymsList);
-      let output = "";
-      synonymsList.forEach((synonym) => {
-        output += `<li>${synonyms}</li>`
-      })
-      list.innerHTML = output;
-    })
-    .catch(() => {
-      result.innerHTML = `<h3>No synonyms Found</h3>`
-    });
-})
