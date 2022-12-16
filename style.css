@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap');
-
+/*
+changes the style of the body tag and the font's of the text's in side of it.
+*/
 body{
  
  
@@ -10,6 +12,9 @@ body{
   background-position: center;
   font-family: 'Work Sans', sans-serif;
 }
+/*
+changes the style and the width of the container class.
+*/
 .container{
   position:relative;
   margin-top: 30px;
@@ -22,14 +27,24 @@ body{
   box-shadow: 0 10px 20px rgba(0,0,0,1);
 }
 
+
+/*
+changes the display of the text-input in wrapper class.
+*/
 .wrapper .text-input{
   display: flex;
   border-bottom: 1px solid rgb(107, 106, 106);
 }
+/*
+changes the border radius of the to-text class in text-input class.
+*/
 .text-input .to-text{
   border-radius: 0px;
   border-left: 1px solid rgb(107, 106, 106);
 }
+/*
+changes the style, height and width of textarea in text-input class.
+*/
 .text-input textarea{
   height: 250px;
   width: 100%;
@@ -41,21 +56,39 @@ body{
   padding: 10px 15px;
   border-radius: 5px;
 }
+
+/*
+changes the color of the placeholder of text-input class.
+*/
 .text-input textarea::placeholder{
   color: rgb(107, 106, 106);
 }
+/*
+changes the display of controls, li and icons classes.
+*/
 .controls, li, .icons, .icons i{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+/*
+changes the list style of controls class.
+*/
 .controls{
   list-style: none;
   padding: 12px 15px;
 }
+
+/*
+changes the width of icons in row of controls class.
+*/
 .controls .row .icons{
   width: 38%;
 }
+
+/*
+changes the width, color and font size of icons in row of controls class. 
+*/
 .controls .row .icons i{
   width: 50px;
   color: rgb(107, 106, 106);
@@ -64,14 +97,24 @@ body{
   transition: transform 0.2s ease;
   justify-content: center;
 }
+/*
+changes the padding right and border right of icons in row.to of controls class. 
+*/
 .controls .row.from .icons{
   padding-right: 15px;
   border-right: 1px solid rgb(107, 106, 106);
 }
+/*
+changes the padding left and border left of icons in row.to of controls class. 
+*/
 .controls .row.to .icons{
   padding-left: 15px;
   border-left: 1px solid rgb(107, 106, 106);
 }
+
+/*
+changes the color, border and fontsize of select in row of controls class. 
+*/
 .controls .row select{
   color: #333;
   border: none;
@@ -80,34 +123,65 @@ body{
   background: none;
   padding-left: 5px;
 }
+
+/*
+changes the width of -webkit-scrollbar in text-area of controls class. 
+*/
 .text-input textarea::-webkit-scrollbar{
   width: 4px;
 }
+
+/*
+changes the width of -webkit-scrollbar in row of controls class. 
+*/
 .controls .row select::-webkit-scrollbar{
   width: 8px;
 }
+
+/*
+changes background color of -webkit-scroll-track in row and textarea of controls and text-input classes. 
+*/
 .text-input textarea::-webkit-scrollbar-track,
 .controls .row select::-webkit-scrollbar-track{
   background: #fff;
 }
+
+/*
+changes the background color and border radius of -webkit-scrollbar-thumb in text-area of text-input class. 
+*/
 .text-input textarea::-webkit-scrollbar-thumb{
   background: #ddd;
   border-radius: 8px;
 }
+
+/*
+changes the background color and border radius of -webkit-scrollbar-thumb in row of controls class. 
+*/
 .controls .row select::-webkit-scrollbar-thumb{
   background: #999;
   border-radius: 8px;
   border-right: 2px solid #ffffff;
 }
+/*
+changes the color, cursor , font size and transition of exchange class in controls class. 
+*/
 .controls .exchange{
   color: rgb(107, 106, 106);
   cursor: pointer;
   font-size: 16px;
   transition: transform 0.2s ease;
 }
+
+/*
+changes the scale of trasform of i:active tag in controls class. 
+*/
 .controls i:active{
   transform: scale(0.9);
 }
+
+/*
+changes the width, padding, border, and cursor of button tag in container class. 
+*/
 .container button{
   width: 100%;
   padding: 14px;
@@ -120,18 +194,30 @@ body{
   border-radius: 5px;
   background-color: rgba(253, 248, 248, 0.5);
 }
+/*
+changes the background color and height of fotter tag. 
+*/
 footer{
     background-color: rgb(86, 88, 88);
     height: 100px;
 }
+/*
+changes the background color of containe class. 
+*/
 .containe{
     background-color: rgb(86, 88, 88);
 }
+/*
+changes the width and margin of git class. 
+*/
 .git{
    width:fit-content;
    margin: auto;
     
 }
+/*
+changes the max-width of every class inside the media. 
+*/
 @media (max-width: 800px){
   .container{
     padding: 20px;
