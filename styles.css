@@ -1,12 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap');
+
 body {
-    background-image:url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true) ;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true) ;
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Work Sans', sans-serif;
 }
-input {
-  color: #ADD8E6; /* pastel color for the text */
-  background-color: #FFFACD; /* pastel color for the input field */
-  
+
+.inside{
+  padding: 0 30% ;
 }
+
+.bg-color{
+ background-color: rgba(243, 247, 191, 0.4);
+ border: 2px solid rgb(5, 5, 5, 0.5);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+.button {
+  background-color: #6B705C;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  height: 1cm;
+  width: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+.heading{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-bottom: 2px solid #6B705C;
+  border-width: medium;
+}
+

@@ -4,7 +4,7 @@ A website that will combine two apis to do something usefull
 API's - https://github.com/public-apis/public-apis
 
 
-Our Website - https://universityofdundee-computing.github.io/CW2-api_mashup/index.html
+Our Website - https://universityofdundee-computing.github.io/CW2-api_mashup/home.html
 
 Dictionary Website - https://universityofdundee-computing.github.io/CW2-api_mashup/dictionary.html
 
