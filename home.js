@@ -27,31 +27,38 @@ if (r === weekdays[0]) {
 } else if (r === weekdays[6]) {
   word = "Betray";
 }
+// Api url 
 const urls = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;
 console.log(word);
 fetch(urls)
+// Fetching data
   .then((resp) => resp.json())
 
   .then((data) => {
     console.log(data);
 
     let speech =
+    //
       data[0].meanings[0].partOfSpeech || data[0].meanings[1].partOfSpeech;
 
     let phonetic = data[0].phonetic;
     let definition =
+    // definition fo the word 
       data[0].meanings[0].definitions[0].definition ||
       data[0].meanings[0].definitions[1].definition;
     let example =
+    // Example using the word of the day 
       data[0].meanings[0].definitions[0].example ||
       data[0].meanings[0].definitions[1].example ||
       data[0].meanings[0].definitions[2].example;
     let audio =
+    // For audio 
       data[0].phonetics[0].audio ||
       data[0].phonetics[1].audio ||
       data[0].phonetics[2].audio;
 
     console.log(speech);
+    // showing 
     result.innerHTML = `
         <div class="word rounded-5">
         <h1 class="text-center">Word Of The Day</h1>
@@ -72,9 +79,11 @@ fetch(urls)
     sound.setAttribute("src", `${audio}`);
   })
   .catch(() => {
+    // Catching for any problems 
     result.innerHTML = `<h3>No result Found`;
   });
 
 function playSound() {
+  // For soind
   sound.play();
 }

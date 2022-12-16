@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap');
 
+/* css for body */
+
 body {
     background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true) ;
   background-size:cover;
@@ -9,15 +11,22 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+/* css for inside */
+
 .inside{
   padding: 0 30% ;
 }
+
+/* css for color */
 
 .bg-color{
  background-color: rgba(243, 247, 191, 0.4);
  border: 2px solid rgb(5, 5, 5, 0.5);
  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
 }
+
+/* css for button */
+
 .button {
   background-color: #6B705C;
   border: none;
@@ -29,6 +38,9 @@ body {
   width: auto;
   box-shadow: 0 10px 20px rgba(0,0,0,1);
 }
+/* css for heading */
+
+
 .heading{
   width: max-content;
   margin-left: auto;
@@ -37,4 +49,21 @@ body {
   border-bottom: 2px solid #6B705C;
   border-width: medium;
 }
+/* css for footer */
 
+
+#footer {
+  position: fixed;
+  height: 50px;
+  background-color: red;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+/* css for body */
+
+
+body {
+  margin-bottom:50px;
+}

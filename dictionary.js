@@ -1,4 +1,4 @@
-// Api used
+// 
 const url1 = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const result = document.getElementById("result");
 const sound = document.getElementById("sound");
@@ -6,7 +6,7 @@ const btn = document.getElementById("search-btn");
 const heading = document.getElementById("wordHeading");
 
 btn.addEventListener("click", () => {
-  // Getting the input
+  // Taking input
   let inpWord = document.getElementById("inp-word").value;
 
   console.log(inpWord);
@@ -42,10 +42,11 @@ btn.addEventListener("click", () => {
         </div>`;
     })
     .catch(() => {
-      // Catching for any problems faced
+      // catching for any problems
       heading.innerHTML = `<h3>No result Found</h3>`;
     });
 });
 function playSound() {
+  // playing sound 
   sound.play();
 }
