@@ -49,19 +49,18 @@ body {
   border-bottom: 2px solid #6B705C;
   border-width: medium;
 }
-/* css for footer */
-
-
-#footer {
-  position: fixed;
-  height: 50px;
-  background-color: red;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
+footer{
+    background-color: rgb(86, 88, 88);
+    height: 100px;
 }
-/* css for body */
+.containe{
+    background-color: rgb(86, 88, 88);
+}
+.git{
+   width:fit-content;
+   margin: auto;
+    
+}
 
 
 body {

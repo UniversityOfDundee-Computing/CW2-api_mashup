@@ -120,7 +120,18 @@ body{
   border-radius: 5px;
   background-color: rgba(253, 248, 248, 0.5);
 }
-
+footer{
+    background-color: rgb(86, 88, 88);
+    height: 100px;
+}
+.containe{
+    background-color: rgb(86, 88, 88);
+}
+.git{
+   width:fit-content;
+   margin: auto;
+    
+}
 @media (max-width: 800px){
   .container{
     padding: 20px;
