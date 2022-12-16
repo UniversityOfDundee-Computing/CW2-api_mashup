@@ -18,6 +18,7 @@ btn.addEventListener("click", () =>
         definition.innerHTML = `
         ${data[0].meanings[0].definitions[0].definition}
         `
+        pronounciation.innerHTML = `<strong> Pronounciation:</strong>   ${data[0].phonetic}`
       //     result.innerHTML =`
       //     <div class="word">
       //   <h3>${inpWord}</h3>
@@ -45,7 +46,6 @@ btn.addEventListener("click", () =>
     contentType: 'application/json',
     success: function(result) {
       console.log(result);
-      word.innerHTML = `${inpWord}`
       list.innerHTML = `<li>${result.synonyms[0]}</li> <li>${result.synonyms[1]}</li> <li>${result.synonyms[2]}</li> <li>${result.synonyms[3]}</li> <li>${result.synonyms[4]}</li>`
     },
     error: function ajaxError(jqXHR)
