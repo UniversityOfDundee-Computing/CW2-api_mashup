@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #feffea">
+      <div class="container-fluid">
+        <button1
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button1>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Dictionary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="translate.html"
+                >Translator</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto px-3 d-none d-lg-block">
+            <li
+              class="nav-item ms-auto animate__animated animate__pulse pt-2 text"
+            >
+              <p><strong>Word Madness</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img
+      src="https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/welcome-png-33297%20(2).png?raw=true"
+      width="1000px"
+      class="image  animate__animated animate__rubberBand"
+      alt=""
+    />
+
+    <audio id="sound"></audio>
+    <div class="result" id="result"></div>
+
+    <h2 class="text-center">Word Facts</h2>
+
+    <div class="container mt-3 mb-4">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mb-4 animate__animated animate__bounceInLeft">
+          <div class="card rounded-5">
+            <div class="card-body rounded-5">
+              <h5 class="card-title">
+                The longest English word is nearly 190,000 letters
+              </h5>
+              <p class="card-text">
+                That would be the chemical name of Titin, the largest known
+                protein. It begins,
+                "Methionyl​threonyl​threonyl​glutaminyl​alanyl​prolyl​threonyl​phenyl​alanyl​threonyl​glutaminyl​prolyl​leucyl​glutaminyl​seryl​valyl​valyl​valyl​leucyl​glutamyl​glycyl​seryl​threonyl​alanyl​threonyl​phenyl​alanyl​glutamyl​alanyl​histidyl​isoleucyl​seryl​glycyl​phenyl​alanyl​prolyl​valyl​prolyl​glutamyl​valyl​seryl​tryptophyl​phenyl​alanyl​arginyl​aspartyl​glycyl​glutaminyl​valyl​isoleucyl​seryl​threonyl​seryl​threonyl​leucyl​pro"
+                and goes on for tens of thousands of letters.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 mb-4 animate__animated animate__bounceInRight">
+          <div class="card rounded-5 ">
+            <div class="card-body rounded-5 ">
+              <h5 class="card-title">
+                The longest word found in a major dictionary is 45 letters long.
+              </h5>
+              <p class="card-text">
+                The word, pneumonoultramicroscopicsilicovolcanoconiosis,
+                technically refers to a type of lung disease caused by silica
+                dust. But according to Lexico, it was actually coined in the
+                1930s by Everett M. Smith, the president of the National
+                Puzzlers League, for the express purpose of becoming the longest
+                word in the English language, so it's a bit of a cheat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mb-4 animate__animated animate__bounceInLeft">
+          <div class="card rounded-5 ">
+            <div class="card-body rounded-5 ">
+              <h5 class="card-title">
+                There's a word for all things breakfast.
+              </h5>
+              <p class="card-text">
+                Pancakes, corn flakes, coffee, orange juice—they are all
+                "jentacular," or "pertaining to breakfast." Impress your friends
+                next time you're at brunch by declaring, "These scrambled eggs
+                are such a great jentacular dish!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 mb-4 animate__animated animate__bounceInRight">
+          <div class="card rounded-5 ">
+            <div class="card-body rounded-5 ">
+              <h5 class="card-title">
+                A single piece of confetti is called a "confetto."
+              </h5>
+              <p class="card-text">
+                Of course, the plural "confetti" is the more commonly used word,
+                but you can use the singular "confetto" to refer to each
+                individual piece of colored paper.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
