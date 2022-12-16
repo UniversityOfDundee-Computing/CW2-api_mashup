@@ -7,6 +7,7 @@ translateBtn = document.querySelector("button"),
 
 selectTag.forEach((tag, id) => {
     for (let country_code in countries) {
+        // from language to translated language
         let selected = id == 0 ? country_code == "en-GB" ? "selected" : "" : country_code == "hi-IN" ? "selected" : "";
         let option = `<option ${selected} value="${country_code}">${countries[country_code]}</option>`;
         tag.insertAdjacentHTML("beforeend", option);
@@ -14,6 +15,7 @@ selectTag.forEach((tag, id) => {
 });
 
 exchageIcon.addEventListener("click", () => {
+    // Switching Languages
     let tempText = fromText.value,
     tempLang = selectTag[0].value;
     fromText.value = toText.value;
@@ -34,14 +36,17 @@ translateBtn.addEventListener("click", () => {
     translateTo = selectTag[1].value;
     if(!text) return;
     toText.setAttribute("placeholder", "Translating...");
+    // Api Used
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
     fetch(apiUrl).then(res => res.json()).then(data => {
+        // Fetching Data
         toText.value = data.responseData.translatedText;
         data.matches.forEach(data => {
             if(data.id === 0) {
                 toText.value = data.translation;
             }
         });
+        // Translated text
         toText.setAttribute("placeholder", "Translation");
     });
 });
