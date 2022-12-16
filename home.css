@@ -42,18 +42,28 @@ h2,h1{
     border-width: medium;
   }
 footer{
-    background-color: rgb(86, 88, 88);
+   
     height: 100px;
 }
 .containe{
     background-color: rgb(86, 88, 88);
+    
 }
 .git{
    width:fit-content;
    margin: auto;
     
 }
-
+.column{
+    width: fit-content;
+    margin: auto;
+}
+@media (max-width: 767px) {
+    .column{
+        margin-left: 250px;
+    }
+    
+}
 
 @media (max-width: 600px){
     .word{
