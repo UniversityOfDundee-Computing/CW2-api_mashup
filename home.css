@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,700&display=swap');
+body{
+    background-image: url(https://github.com/UniversityOfDundee-Computing/CW2-api_mashup/blob/main/book.jpg?raw=true);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+.image{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+
+.word{
+    width: max-content;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: rgba(243, 247, 191, 0.4);
+    border: 3px solid rgba(5, 5, 5, 0.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+.col1{
+    float: left;
+}
+.card-body{
+    background-color: rgba(176, 182, 96, 0.6);
+    border: 3px solid rgba(5, 5, 5, 0.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+    margin: 5px;
+}
+
+h2,h1{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-bottom: 2px solid #6B705C;
+    border-width: medium;
+  }
+
+
+@media (max-width: 600px){
+    .word{
+        width: 90%;
+        margin: 40px auto;
+}
+.image{
+    width : 70%
+}
+}
+
