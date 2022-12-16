@@ -11,9 +11,11 @@ body{
   font-family: 'Work Sans', sans-serif;
 }
 .container{
-  margin-top: 25px;
-  max-width: 690px;
-  width: 100%;
+  position:relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  width: 90%;
   padding: 30px;
   background-color: rgba(243, 247, 191, 0.4);
   border: 3px solid rgba(5, 5, 5, 0.7);
@@ -119,7 +121,7 @@ body{
   background-color: rgba(253, 248, 248, 0.5);
 }
 
-@media (max-width: 660px){
+@media (max-width: 800px){
   .container{
     padding: 20px;
   }
@@ -131,7 +133,7 @@ body{
     border-top: 1px solid #ccc;
   }
   .text-input textarea{
-    height: 200px;
+    height: 170px;
   }
   .controls .row .icons{
     display: none;
@@ -141,9 +143,11 @@ body{
     font-size: 16px;
   }
   .controls .row select{
+    padding-left: 30px;
     font-size: 16px;
   }
   .controls .exchange{
+    padding-left: 20px;
     font-size: 14px;
   }
 }
