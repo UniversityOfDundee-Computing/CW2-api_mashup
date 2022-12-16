@@ -199,21 +199,26 @@ changes the width, padding, border, and cursor of button tag in container class.
 changes the background color and height of fotter tag. 
 */
 footer{
-    background-color: rgb(86, 88, 88);
+   
     height: 100px;
 }
-/*
-changes the background color of containe class. 
-*/
 .containe{
     background-color: rgb(86, 88, 88);
+    
 }
-/*
-changes the width and margin of git class. 
-*/
 .git{
    width:fit-content;
    margin: auto;
+    
+}
+.column{
+    width: fit-content;
+    margin: auto;
+}
+@media (max-width: 767px) {
+    .column{
+        margin-left: 250px;
+    }
     
 }
 /*
