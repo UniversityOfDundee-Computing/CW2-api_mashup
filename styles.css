@@ -37,4 +37,16 @@ body {
   border-bottom: 2px solid #6B705C;
   border-width: medium;
 }
+footer{
+    background-color: rgb(86, 88, 88);
+    height: 100px;
+}
+.containe{
+    background-color: rgb(86, 88, 88);
+}
+.git{
+   width:fit-content;
+   margin: auto;
+    
+}
 
